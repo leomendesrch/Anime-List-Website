@@ -1,7 +1,6 @@
 import { AnimeCard, AnimeListContainer, AnimeTitle, Card} from "./animeList.style"
 import {useEffect, useState} from 'react'
 import useInputContext from "../../hooks/useInputContext"
-import Footer from "../footer/footer"
 
 interface Iprops {
     data: [{
@@ -21,10 +20,12 @@ function AnimeList(){
     const {searchValue} = useInputContext()
 
     useEffect(() => {
+        if(searchValue !== ''){
         fetch(`${api}anime?filter[text]=${searchValue}&page[limit]=16`)
         .then(response => response.json())
         .then((response) => (setInfo(response), console.log()))
         .catch((error) => console.log(error))
+        }
     },[searchValue])
 
     return(
