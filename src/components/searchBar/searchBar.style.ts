@@ -8,6 +8,10 @@ export const SearchContainer = styled.div`
     align-items: center;
     justify-content: center;
     margin-bottom: 50px;
+
+    @media (max-width: 496px) {
+    
+    }
 `
 
 export const SearchInput = styled.input`
@@ -20,6 +24,10 @@ export const SearchInput = styled.input`
     padding-left: 5px;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
+
+    @media (max-width: 496px) {
+        width: 200px;
+    }
 `
 export const IconContainer = styled.div`
     width: 38px;
@@ -36,8 +44,17 @@ export const IconContainer = styled.div`
     &:hover{
        background-color: #999999;
     }
+
+    @media (max-width: 496px) {
+        width: 35px;
+        height: 35px;
+    }
 `
 
 export const SearchIcon = styled.img`
     height: 17px;
+
+    @media (max-width: 496px) {
+    height: 15px;
+    }
 `

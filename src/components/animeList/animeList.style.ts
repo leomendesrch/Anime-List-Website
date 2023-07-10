@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 export const AnimeListContainer = styled.div`
-    max-width: 1600px;
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    row-gap: 20px;
+    grid-template-columns: repeat(auto-fill, 250px);
     padding-bottom: 30px;
-    column-gap: 40px;
+   justify-content: center;
+   gap: 50px;
 `
 
 export const Card = styled.div`

@@ -9,11 +9,16 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
     gap: 10px;
+
 `
 
 export const LogoImage = styled.img`
     height: 23px;
     width: auto;
+
+    @media (max-width: 375px) {
+        height: 20px;
+    }
 `
 
 export const HeaderText = styled.span`

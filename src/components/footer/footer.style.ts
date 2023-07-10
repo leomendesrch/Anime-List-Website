@@ -8,9 +8,10 @@ export const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 `
 export const FooterImage = styled.img`
-    height: 100px;
+    height: 60px;
     width: auto;
 `
 
